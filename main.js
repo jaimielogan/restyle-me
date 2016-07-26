@@ -64,7 +64,7 @@ $(document).ready(function() {
         $('#searchLat').html('Latitude: ' + Math.floor(searchLatitude) + ')');
         //colloquial description
         var weatherData = data.weather;
-        $('#searchColloquial').html(weatherData[0].description);
+        $('#searchColloquial').html(weatherData[0].description).css("padding-bottom", "20px").css("border-bottom","1px solid #114B5F");
 
 
 

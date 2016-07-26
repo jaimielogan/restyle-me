@@ -2,32 +2,38 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <title>J S | W E A T H E R</title>
   </head>
   <body>
     <div class="container">
-      <h1>Weather Descriptions!</h1>
-      <h3 id="tuning"></h3>
-      <h3 id="currentLoc"></h3>
-      <p id="long"></p>
-      <p id="lat"></p>
-      <h3 id="colloquial"></h3>
+      <h1>Weather</h1>
+      <h3 id="tuning" class = "tuning"></h3>
+      <h3 id="currentLoc" class = "currentLoc"></h3>
+      <span>
+        <p id="long" class = "long"></p>
+        <p id="lat" class = "lat"></p>
+      </span>
+      <h3 id="colloquial" class = "colloquial"></h3>
 
-      <div id="searchResults">
+      <div id="searchResults" class = "searchResults">
         <h2>Search Results</h2>
-        <p id='disappear'>Enter a city and state below</p>
-        <p id="searchLoc"></p>
-        <p id="searchLong"></p>
-        <p id="searchLat"></p>
-        <p id="searchColloquial"></p>
+        <p id="disappear">Enter a city and state below</p>
+        <p id="searchLoc" class = "searchLoc"></p>
+        <span class = "hide">
+          <p id="searchLong" class = "searchLong"></p>
+          <p id="searchLat" class = "searchLat"></p>
+        </span>
+        <p id="searchColloquial" class = "searchColloquial"></p>
       </div>
 
       <div class="search">
         <input type="text"
                id="userInput"
                placeholder="City, State"
+               autofocus
                >
-        <button id="submit">Search</button>
+        <button id="submit" class = "submit">Search</button>
       </div>
 
     </div>
